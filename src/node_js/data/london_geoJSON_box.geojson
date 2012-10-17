@@ -1,0 +1,21 @@
+
+
+{
+	"type":"FeatureCollection",
+	"features":
+	[{
+		"type":"Feature",
+		"geometry":{
+			"type":"Polygon",
+			"coordinates":[[
+				[-0.489, 51.686],
+				[0.236,51.686],
+				[0.236,51.28],
+				[-0.489,51.28]
+			]]
+		},
+		"properties":{
+			"name":"greater london bounds"
+		}
+	}]
+}
