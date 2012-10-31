@@ -30,7 +30,22 @@ function got_data(err, data){
 			slices[line]["features"].push(station);
 		}
 	}
-//multi line slices (always sort the line arrays so we don't get different keys)
+	//multi line slices (always sort the line arrays so we don't get different keys)
+	for (var i =0; i<json["features"].length; i++){
+		var station = json["features"][i];
+		station["properties"]["lines"].sort();
+		var line_group = station["properties"]["lines"].join('_');
+		if(!slices[line_group]){
+			console.log('creating group ' + line_group);
+			slices[line_group] = {
+				"type": "FeatureCollection",
+				"features": []
+			}
+		}
+		slices[line_group]["features"].push(station);
+	}
+
+
 
 	write_files(slices);
 }

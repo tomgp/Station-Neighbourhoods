@@ -6,7 +6,7 @@ var fs = require("fs");
 var data_path = 'data/tube_stations.csv';
 var scale_factor = 10000; //a scaling factor to hopefully increase the accuracy of the resulting polygons
 // Greater London polygon for clipping. Points defined clockwise http://www.openstreetmap.org/?minlon=-0.489&minlat=51.28&maxlon=0.236&maxlat=51.686&box=yes
-var london_bounds = d3.geom.polygon([[-0.489*scale_factor, 51.686*scale_factor],[0.236*scale_factor,51.686*scale_factor],[0.236*scale_factor,51.686*scale_factor],[-0.489*scale_factor,51.28*scale_factor]]);
+// var london_bounds = d3.geom.polygon([[-0.489*scale_factor, 51.686*scale_factor],[0.236*scale_factor,51.686*scale_factor],[0.236*scale_factor,51.686*scale_factor],[-0.489*scale_factor,51.28*scale_factor]]);
 // clipping docs are missing so usage: var clipped_polygon = london_bounds.clip(unclipped_polygon) (I think);
 
 //GO!
