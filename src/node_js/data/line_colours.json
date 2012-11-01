@@ -1,54 +1,72 @@
 {
-	"bakerloo":{
-			"stroke":#B36305,
-			"fill":#B36305
+	"Bakerloo":{
+			"stroke":"#B36305",
+			"fill":"#B36305",
+			"faded":"#B08E6E"
 		},
-	"central":{		
-		"stroke":#E32017,
-		"fill":#E32017
+	"Central":{		
+		"stroke":"#E32017",
+		"fill":"#E32017",
+		"faded":"#B05558"
 		},
-	"circle":{
-			"stroke":#FFD300,
-			"fill":#FFD300
+	"Circle":{
+			"stroke":"#FFD300",
+			"fill":"#FFD300",
+			"faded":"#FEF1AA"
 		},
-	"district":{
-			"stroke":#00782A,
-			"fill":#00782A
+	"District":{
+			"stroke":"#00782A",
+			"fill":"#00782A",
+			"faded":"#648F72"
 		},
-	"docklands":{
-			"stroke":#00A4A7,
-			"fill":#00A4A7
-		}
-	"overground":{
-			"stroke":#EE7C0E,
-			"fill":#EE7C0E
+	"DLR":{
+			"stroke":"#00A4A7",
+			"fill":"#00A4A7",
+			"faded":"#7CB7B7"
 		},
-	"hammersmith_and_city":{
-			"stroke":#F3A9BB,
-			"fill":#F3A9BB
+	"Hammersmith And City":{
+			"stroke":"#F3A9BB",
+			"fill":"#F3A9BB",
+			"faded":"#F1D2DA"
 		},
-	"jubilee":{
-			"stroke":#A0A5A9,
-			"fill":#A0A5A9
+	"Jubilee":{
+			"stroke":"#A0A5A9",
+			"fill":"#A0A5A9",
+			"faded":"#C4C5C7"
 		},
-	"metropolitan":{
-			"stroke":#9B0056,
-			"fill":#9B0056
+	"Metropolitan":{
+			"stroke":"#9B0056",
+			"fill":"#9B0056",
+			"faded":"#884D69"
 		},
-	"northern":{
-			"stroke":#000000,
-			"fill":#000000
+	"Northern":{
+			"stroke":"#000000",
+			"fill":"#000000",
+			"faded":"#313131"
 		},
-	"piccadilly":{
-			"stroke":#003688,
-			"fill":#003688
+	"Overground":{
+			"stroke":"#EE7C0E",
+			"fill":"#EE7C0E",
+			"faded":"#DAA981"
 		},
-	"victoria":{
-			"stroke":#0098D4,
-			"fill":#0098D4
+	"Piccadilly":{
+			"stroke":"#003688",
+			"fill":"#003688",
+			"faded":"#DAA981"
 		},
-	"waterloo_and_city":{
-			"stroke":#95CDBA,
-			"fill":#95CDBA
+	"Tramlink":{
+			"stroke":"#84B817",
+			"fill":"#84B817",
+			"faded":"#B9CE8F"
+		},	
+	"Victoria":{
+			"stroke":"#0098D4",
+			"fill":"#0098D4",
+			"faded":"#77ADC6"
+		},
+	"Waterloo and City":{
+			"stroke":"#95CDBA",
+			"fill":"#95CDBA",
+			"faded":"#CFE6DE"
 		}
 }
