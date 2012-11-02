@@ -1,7 +1,20 @@
 var Canvas = require('canvas');
 var fs = require('fs');
+var FillGenerator = {};
+module.exports = FillGenerator;
 
-function drawFill(colours, strip_width, file){
+FillGenerator.drawFill = function(colours, strip_width, file){
+	var drawShape = function(context, points, fill, stroke){
+		context.beginPath();
+		context.fillStyle = fill;
+		context.strokeStyle = stroke;
+		context.moveTo(points[points.length-1].x, points[points.length-1].y );
+		for(var i = 0; i<points.length; i++){
+			context.lineTo(points[i].x, points[i].y);
+		}
+		context.stroke();
+		context.fill();
+	}
 	//create a canavs based on how many stripes we need
 	canvas_dim = strip_width * colours.length
 	
@@ -32,28 +45,13 @@ function drawFill(colours, strip_width, file){
   	var stream = canvas.createPNGStream();
 
 	stream.on('data', function(chunk){
-		console.log('writing chunk');
 		out.write(chunk);
 	});
 }
 
-function drawShape(context, points, fill, stroke){
-	console.log("drawing shape with " + points.length + " points");
-	console.log(points);
-	context.beginPath();
-	context.fillStyle = fill;
-	context.strokeStyle = stroke;
-	//move to the last point
-	context.moveTo(points[points.length-1].x, points[points.length-1].y );
-	for(var i = 0; i<points.length; i++){
-		console.log('line ' + points[i].x +", " + points[i].y);
-		context.lineTo(points[i].x, points[i].y);
-	}
-	context.stroke();
-	context.fill();
-}
-
-var c = [{fill:'#aaa',stroke:'#aaa'},
+FillGenerator.test = function(){
+	var c = [{fill:'#aaa',stroke:'#aaa'},
 		{fill:'#000',stroke:'#000'}];
 
-drawFill(c, 20, "test/tile.png");
+	FillGenerator.drawFill(c, 20, "test/tile2.png");
+}

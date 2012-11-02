@@ -1,11 +1,15 @@
 //go through a geo json feature set and create a new bunch of feature sets based on a propery value
 fs = require ("fs");
+fillGenerator = require('./fill_generator');
+lineData = require('./line_data');
 
 var out_path = '';
 
 var geoJSON_splits = {};
 
 split_data('data/stations.geojson', 'lines', 'data/split/');
+
+
 
 function split_data(in_path, property_name, output){
 	out_path = output;
@@ -21,7 +25,6 @@ function got_data(err, data){
 		for(var j=0; j<station["properties"]["lines"].length; j++){
 			var line = station["properties"]["lines"][j];
 			if(!slices[line]){
-				console.log('creating ' + line)
 				slices[line] = {
     				"type": "FeatureCollection",
     				"features": []
@@ -34,9 +37,10 @@ function got_data(err, data){
 	for (var i =0; i<json["features"].length; i++){
 		var station = json["features"][i];
 		station["properties"]["lines"].sort();
+
 		var line_group = station["properties"]["lines"].join('_');
 		if(!slices[line_group]){
-			console.log('creating group ' + line_group);
+			createFill(line_group);
 			slices[line_group] = {
 				"type": "FeatureCollection",
 				"features": []
@@ -44,13 +48,26 @@ function got_data(err, data){
 		}
 		slices[line_group]["features"].push(station);
 	}
-
-
-
 	write_files(slices);
 }
 
+function createFill(line_string){
+	var lines = line_string.split('_');
+	var colours = lines.map(function(line){
+		var colour = {fill:'#FFFFFF',stroke:'#000000',faded:'#666666'};
+		if(lineData[line]){
+			colour = lineData[line]
+		}else{
+			console.log('no colour found for ' + line);
+		}
+		return colour;
+	});
+	fillGenerator.drawFill(colours, 20, 'test/'+line_string+'.gif');
+}
+
+
 function write_files(contents){
+	console.log('--- WRITING GEOJSON ---');
 	for(var line in contents){
 		fs.writeFileSync( out_path + line + ".geojson", JSON.stringify(contents[line]), 'UTF-8');
 		console.log("written " +  out_path + line + ".geojson");

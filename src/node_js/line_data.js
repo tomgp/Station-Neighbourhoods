@@ -1,4 +1,4 @@
-{
+var LineData = {
 	"Bakerloo":{
 			"stroke":"#B36305",
 			"fill":"#B36305",
@@ -24,7 +24,7 @@
 			"fill":"#00A4A7",
 			"faded":"#7CB7B7"
 		},
-	"Hammersmith And City":{
+	"Hammersmith and City":{
 			"stroke":"#F3A9BB",
 			"fill":"#F3A9BB",
 			"faded":"#F1D2DA"
@@ -69,4 +69,6 @@
 			"fill":"#95CDBA",
 			"faded":"#CFE6DE"
 		}
-}
+};
+
+module.exports = LineData;

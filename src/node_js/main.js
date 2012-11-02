@@ -44,6 +44,13 @@ function build_vertex_array(tube_stations){
 	return vertices;
 }
 
+function removeDuplicates(a){	
+	var result = a.filter(function(elem, pos) {
+    	return a.indexOf(elem) == pos;
+	});
+	return result;
+}
+
 function create_output(original_data, polygons,adjust_for_tilemill){
 	var geoJSON = { 	
 			"type": "FeatureCollection",
@@ -52,7 +59,7 @@ function create_output(original_data, polygons,adjust_for_tilemill){
       		]
       	};
 	for(var i = 0; i<original_data.length; i++){
-		var lines_array = original_data[i]["Lines"].split(',');
+		var lines_array = removeDuplicates(original_data[i]["Lines"].split(','));
 		var coords = [[]];
 		var last_coord;
 		for(var j = 0; j<polygons[i].length; j++){
