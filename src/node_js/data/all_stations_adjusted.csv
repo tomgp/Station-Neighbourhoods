@@ -1,18 +1,18 @@
 Name,Latitude,Longitude,Lines
 Acton Town ,51.5025,-0.278126,"District,Piccadilly"
-Acton Central ,51.50883531,-0.263033174,Overground
-Acton Central ,51.50856013,-0.262879534,Overground
-Aldgate ,51.51394,-0.07537,Metropolitan 
+Acton Central,51.50883531,-0.263033174,Overground
+Acton Central,51.50856013,-0.262879534,Overground
+Aldgate ,51.51394,-0.07537,Metropolitan
 Aldgate East ,51.51514,-0.07178,"District,Hammersmith and City"
 Alperton ,51.54097,-0.30061,Piccadilly
-Amersham ,51.67435,-0.60732,Metropolitan 
-Angel ,51.53253,-0.10579,Northern 
+Amersham ,51.67435,-0.60732,Metropolitan
+Angel ,51.53253,-0.10579,Northern
 Archway ,51.56536,-0.13474,Northern
 Arnos Grove ,51.61625,-0.13355,Piccadilly
 Arsenal ,51.55847,-0.10561,Piccadilly
 Baker Street ,51.52265,-0.15704,"Circle,Hammersmith and City"
 Baker Street ,51.522236,-0.15708,"Bakerloo,Jubilee"
-Balham ,51.44344113,-0.152945844,Northern 
+Balham ,51.44344113,-0.152945844,Northern
 Bank ,51.5134047,-0.08905843,"Central,Waterloo and City"
 Barbican ,51.520865,-0.097758,"Circle,Hammersmith and City,Metropolitan"
 Barking ,51.54079,0.08018 ,"District,Hammersmith and City"
@@ -22,7 +22,7 @@ Bayswater ,51.51224,-0.187569,"Circle,District"
 Becontree ,51.54029,0.12620 ,District
 Belsize Park ,51.55036,-0.16465,Northern
 Bermondsey ,51.49813,-0.0635,Jubilee
-Bethnal Green ,51.52718,-0.05504,Central 
+Bethnal Green ,51.52718,-0.05504,Central
 Blackfriars ,51.5114403,-0.1041905,"Circle,District"
 Blackhorse Road ,51.58698,-0.04104,Victoria
 Bond Street ,51.51461,-0.14897,"Central,Jubilee"
@@ -40,29 +40,29 @@ Burnt Oak ,51.603,-0.26427,Northern
 Caledonian Road ,51.5485,-0.11802,Piccadilly
 Caledonian Road and Barnesbury ,51.54326,-0.11544,Overground
 Camden Road ,51.54192,-0.13981,Overground
-Camden Town ,51.5393,-0.14316,Northern 
+Camden Town ,51.5393,-0.14316,Northern
 Canada Water ,51.49787 ,-0.04967 ,Overground
-Canary Wharf ,51.50362,-0.01987,Jubilee 
+Canary Wharf ,51.50362,-0.01987,Jubilee
 Cannon Street ,51.51141,-0.09047,"Circle,District"
 Canonbury ,51.54822,-0.09632,Overground
 Canons Park ,51.6081,-0.29487,Jubilee
-Chalfont and Latimer ,51.66822,-0.56053,Metropolitan 
+Chalfont and Latimer ,51.66822,-0.56053,Metropolitan
 Chalk Farm ,51.5439,-0.15384,Northern
 Chancery Lane ,51.51836,-0.11115,Central
 Charing Cross ,51.507108,-0.122963,"Bakerloo,Northern"
-Chesham ,51.70522733,-0.610986426,Metropolitan 
+Chesham ,51.70522733,-0.610986426,Metropolitan
 Chigwell ,51.61795,0.07511 ,Central
 Chiswick Park ,51.49466,-0.26866,District
-Chorleywood ,51.65429872,-0.518373353,Metropolitan 
-City Overground ,51.51416,-0.10335,Overground
+Chorleywood ,51.65429872,-0.518373353,Metropolitan
+City Overground,51.51416,-0.10335,Overground
 Clapham Common ,51.46156,-0.13802,Northern
 Clapham North ,51.46522,-0.1295,Northern
 Clapham South ,51.45292257,-0.147562148,Northern
 Cockfosters ,51.65117,-0.14811,Piccadilly
 Colindale ,51.59556,-0.24996,Northern
 Colliers Wood ,51.41823649,-0.17800983,Northern
-Covent Garden ,51.51308,-0.12427,Piccadilly 
-Croxley ,51.64733268,-0.441479115,Metropolitan 
+Covent Garden ,51.51308,-0.12427,Piccadilly
+Croxley ,51.64733268,-0.441479115,Metropolitan
 Dagenham East ,51.54396,0.16439 ,District
 Dagenham Heathway ,51.54173,0.14543 ,District
 Dalston Kingsland ,51.54832,-0.07879,Overground
@@ -76,60 +76,60 @@ East Finchley ,51.5872974705487,-0.16495632312818,Northern
 East Ham ,51.53931,0.05260 ,"District,Hammersmith and City"
 East Putney ,51.459015,-0.211138,District
 Eastcote ,51.57676,-0.39629,"Metropolitan,Piccadilly"
-Edgware ,51.61385,-0.27515,Northern 
-Edgware Road (Bakerloo Line) ,51.51956,-0.169068,Bakerloo 
+Edgware ,51.61385,-0.27515,Northern
+Edgware Road (BakerlooLine) ,51.51956,-0.169068,Bakerloo
 Edgware Road (Circle Line) ,51.520195,-0.166986,"Circle,District,Hammersmith and City"
 Elephant and Castle ,51.49467,-0.10047,"Bakerloo,Northern"
 Elm Park ,51.54969,0.19779 ,District
 Embankment ,51.50717,-0.12195,"Bakerloo,Circle,District,Northern"
 Epping ,51.69365,0.11495 ,Central
-Euston ,51.52774,-0.13303,Northern 
+Euston ,51.52774,-0.13303,Northern
 Euston Square ,51.52584,-0.1357,"Circle,Hammersmith and City,Metropolitan"
 Fairlop ,51.59634,0.09125 ,Central
 Farringdon ,51.520362948,-0.105126482,"Circle,Hammersmith and City,Metropolitan"
 Farringdon ,51.520086,-0.104789,"Circle,Hammersmith and City,Metropolitan"
-Finchley Central ,51.60102,-0.1924,Northern
+Finchley Central,51.60102,-0.1924,Northern
 Finchley Road ,51.546701,-0.179867,"Jubilee,Metropolitan"
 Finchley Road and Frognal ,51.54994,-0.18412,Overground
 Finsbury Park ,51.56498,-0.10543,"Piccadilly,Victoria"
-Fulham Broadway ,51.48033,-0.19488,District 
+Fulham Broadway ,51.48033,-0.19488,District
 Gants Hill ,51.57649,0.06637,Central
 Gloucester Road ,51.49408266,-0.17295341,"Circle,District,Piccadilly"
 Golders Green ,51.57249,-0.1941,Northern
 Goldhawk Road ,51.501248,-0.226776,Hammersmith and City
-Goodge Street ,51.5206,-0.13441,Northern 
+Goodge Street ,51.5206,-0.13441,Northern
 Gospel Oak ,51.55597,-0.15228,Overground
 Grange Hill ,51.61326,0.09258 ,Central
 Great Portland Street ,51.52391,-0.14397,"Circle,Hammersmith and City,Metropolitan"
 Greenford ,51.542346,-0.345903,Central
 Gunnersbury ,51.49126844,-0.275554312,District
 Green Park ,51.50674,-0.14276,"Jubilee,Piccadilly,Victoria"
-Hackney Central ,51.54689,-0.05784,Overground
+Hackney Central,51.54689,-0.05784,Overground
 Hackney Wick ,51.54348,-0.02474,Overground
 Hainault ,51.60288,0.09332 ,Central
 Hammersmith (DistandPicc Line) ,51.492328,-0.222825,"District,Piccadilly"
 Hammersmith (HandC Line) ,51.494190748,-0.225964953,Hammersmith and City
-Hampstead ,51.55645,-0.17851,Northern 
+Hampstead ,51.55645,-0.17851,Northern
 Hampstead Heath ,51.55533,-0.16656,Overground
 Hanger Lane ,51.53,-0.2929,Central
 Harlesden ,51.53628278,-0.257622488,Bakerloo
 Harrow and Wealdstone ,51.59205973,-0.334725352,Bakerloo
-Harrow-on-the-Hill ,51.579335,-0.337052,Metropolitan 
+Harrow-on-the-Hill ,51.579335,-0.337052,Metropolitan
 Hatton Cross ,51.466988,-0.423035,Piccadilly
 Heathrow Terminals 1-2-3 ,51.4712899,-0.4527438,Piccadilly
 Heathrow Terminal 4 ,51.4594777,-0.44689658,Piccadilly
-Hendon Central ,51.58346,-0.22653,Northern
+Hendon Central,51.58346,-0.22653,Northern
 High Barnet ,51.6506519031751,-0.194138165994553,Northern
 High Street Kensington ,51.5003459144,-0.192351664,"Circle,District"
 Highbury and Islington ,51.54502,-0.10752,"Overground,Victoria,Northern"
-Highgate ,51.57722,-0.14553,Northern 
+Highgate ,51.57722,-0.14553,Northern
 Hillingdon ,51.55364,-0.45062,"Metropolitan,Piccadilly"
 Holborn ,51.51711,-0.12055,"Central,Piccadilly"
 Holland Park ,51.50722,-0.20553,Central
 Holloway Road ,51.5529,-0.11278,Piccadilly
 Homerton ,51.5471,-0.04323,
 Hornchurch ,51.55387,0.21797 ,District
-Hounslow Central ,51.47129,-0.365853,Piccadilly
+Hounslow Central,51.47129,-0.365853,Piccadilly
 Hounslow East ,51.47354,-0.356,Piccadilly
 Hounslow West ,51.473689,-0.386471,Piccadilly
 Hyde Park Corner ,51.50313,-0.15278,Piccadilly
@@ -137,18 +137,18 @@ Ickenham ,51.56147,-0.44257,"Metropolitan,Piccadilly"
 Kennington ,51.48823,-0.10587,Northern
 Kensal Green ,51.53060655,-0.224253545,Bakerloo
 Kensal Rise ,51.53387,-0.22145,Overground
-Kensington (Olympia) ,51.49675,-0.20931,District 
-Kentish Town ,51.55046,-0.14067,Northern 
+Kensington (Olympia) ,51.49675,-0.20931,District
+Kentish Town ,51.55046,-0.14067,Northern
 Kentish Town West ,51.54776,-0.14708,Overground
 Kenton ,51.58173809,-0.316870809,Bakerloo
 Kew Gardens ,51.47725641,-0.284980014,District
 Kilburn ,51.5471715,-0.205002,Jubilee
-Kilburn Park ,51.53495818,-0.193963023,Bakerloo 
+Kilburn Park ,51.53495818,-0.193963023,Bakerloo
 King's Cross St.Pancras ,51.53057,-0.12399,"Piccadilly,Circle,Victoria,Northern,Metropolitan,Hammersmith and City"
-King's Cross Overground ,51.5308,-0.12044,Overground 
+King's Cross Overground,51.5308,-0.12044,Overground
 Kingsbury ,51.58422,-0.2788,Jubilee
 Knightsbridge ,51.50169,-0.1603,Piccadilly
-Ladbroke Grove ,51.5173,-0.21114,Hammersmith and City 
+Ladbroke Grove ,51.5173,-0.21114,Hammersmith and City
 Lambeth North ,51.49894,-0.11216,Bakerloo
 Lancaster Gate ,51.512083,-0.175067,Central
 Latimer Road ,51.513125,-0.218428,Hammersmith and City
@@ -162,28 +162,28 @@ Maida Vale ,51.52989409,-0.185888819,Bakerloo
 Manor House ,51.57038,-0.09601,Piccadilly
 Mansion House ,51.51256,-0.09397,"Circle,District"
 Marble Arch ,51.513597,-0.15869195,Central
-Marylebone ,51.52266,-0.162996,Bakerloo 
+Marylebone ,51.52266,-0.162996,Bakerloo
 Mile End ,51.525306,-0.033471,"Central,District,Hammersmith and City"
 Mill Hill East ,51.60892,-0.20965,Northern
 Monument ,51.510165,-0.085991,"Circle,District"
-Moor Park ,51.62970512,-0.432070848,Metropolitan 
+Moor Park ,51.62970512,-0.432070848,Metropolitan
 Moorgate ,51.51817,-0.08859,"Northern,Circle,Hammersmith and City,Metropolitan,Northern,Overground"
 Morden ,51.40222413,-0.194599126,Northern
 Mornington Crescent ,51.53427,-0.13901,Northern
-Neasden ,51.55427,-0.25042,Jubilee 
+Neasden ,51.55427,-0.25042,Jubilee
 New Cross ,51.477363,-0.0338817,Overground
 New Cross Gate ,51.47585,-0.04049,Overground
 Newbury Park ,51.57565,0.08927 ,Central
 North Acton ,51.5237,-0.26019,Central
 North Ealing ,51.51807,-0.28838,Piccadilly
-North Greenwich ,51.50056,0.00360 ,Jubilee 
+North Greenwich ,51.50056,0.00360 ,Jubilee
 North Harrow ,51.58503612,-0.362595264,Metropolitan
 North Wembley ,51.56258091,-0.304072648,Bakerloo
 Northfields ,51.499856,-0.313188,Piccadilly
 Northolt ,51.548054,-0.368257,Central
 Northolt ,51.548467,-0.36968,Central
 Northwick Park ,51.57850117,-0.317857023,Metropolitan
-Northwood ,51.61098984,-0.423584422,Metropolitan 
+Northwood ,51.61098984,-0.423584422,Metropolitan
 Northwood Hills ,51.60043795,-0.408812575,Metropolitan
 Notting Hill Gate ,51.509028,-0.1962847,"Central,Circle,District"
 Oakwood ,51.64739,-0.13192,Piccadilly
@@ -192,7 +192,7 @@ Osterley ,51.481569,-0.35196,Piccadilly
 Oval ,51.48214,-0.11284,Northern
 Oxford Circus ,51.51517,-0.14119,"Bakerloo,Central,Victoria"
 Paddington ,51.5151846554,-0.17553880792,"Circle,District"
-Paddington (HandC Line) ,51.519096707,-0.176968859,Hammersmith and City 
+Paddington (HandC Line) ,51.519096707,-0.176968859,Hammersmith and City
 Park Royal ,51.52671,-0.28417,Piccadilly
 Parsons Green ,51.47488,-0.20205,District
 Perivale ,51.536673,-0.32391,Central
@@ -211,7 +211,7 @@ Redbridge ,51.57618,0.04542,Central
 Regent's Park ,51.52344,-0.14713,Bakerloo
 Richmond ,51.46343247,-0.302033247,District
 Richmond ,51.4632474,-0.300618047,District
-Rickmansworth ,51.64027898,-0.473521454,Metropolitan 
+Rickmansworth ,51.64027898,-0.473521454,Metropolitan
 Roding Valley ,51.61691,0.04264 ,Central
 Rotherhithe ,51.50089,-0.05211,Overground
 Royal Oak ,51.519383,-0.187785,Hammersmith and City
@@ -237,10 +237,10 @@ South Woodford ,51.59088,0.02726 ,Central
 Southfields ,51.444941,-0.206466,District
 Southgate ,51.6324,-0.12765,Piccadilly
 Southwark ,51.50384,-0.10478,Jubilee
-St.John's Wood ,51.53472,-0.17428,Jubilee 
+St.John's Wood ,51.53472,-0.17428,Jubilee
 St.Paul's ,51.515285,-0.097598,Central
 Stamford Brook ,51.494935,-0.24619,District
-Stanmore ,51.61895,-0.30241,Jubilee 
+Stanmore ,51.61895,-0.30241,Jubilee
 Stepney Green ,51.521884,-0.046546,"District,Hammersmith and City"
 Stockwell ,51.47224,-0.1227,"Northern,Victoria"
 Stonebridge Park ,51.54402388,-0.275978856,Bakerloo
@@ -261,22 +261,22 @@ Totteridge and Whetstone ,51.63022,-0.17917,Northern
 Tower Hill ,51.50991,-0.076813,"Circle,District"
 Tufnell Park ,51.55663,-0.13813,Northern
 Turnham Green ,51.495143,-0.25406,District
-Turnpike Lane ,51.59031,-0.10308,Piccadilly 
+Turnpike Lane ,51.59031,-0.10308,Piccadilly
 Upminster ,51.55925,0.25177 ,District
 Upminster Bridge ,51.55847,0.23509 ,District
 Upney ,51.53824,0.09998 ,District
 Upton Park ,51.53514,0.03373,"District,Hammersmith and City"
 Uxbridge ,51.54687,-0.47725,"Piccadilly,Metropolitan"
-Vauxhall ,51.48603,-0.12369,Victoria 
-Victoria ,51.49662869,-0.14400853,"Circle,District,Victoria"
-Walthamstow Central ,51.58293,-0.01996,Victoria 
+Vauxhall ,51.48603,-0.12369,Victoria
+Victoria,51.49662869,-0.14400853,"Circle,District,Victoria"
+Walthamstow Central,51.58293,-0.01996,Victoria
 Wanstead ,51.57565,0.02864,Central
 Wapping ,51.50451,-0.05607,Overground
 Warren Street ,51.5245,-0.1381,"Northern,Victoria"
 Warwick Avenue ,51.52329728,-0.183777837,Bakerloo
 Waterloo ,51.50322,-0.11328,"Bakerloo,Northern,Waterloo and City"
-Watford ,51.65741058,-0.41745306,Metropolitan 
-Wembley Central ,51.55122817,-0.29577538,Bakerloo
+Watford ,51.65741058,-0.41745306,Metropolitan
+Wembley Central,51.55122817,-0.29577538,Bakerloo
 Wembley Park ,51.56355598,-0.279770242,"Jubilee,Metropolitan"
 West Acton ,51.51818,-0.28064,Central
 West Brompton ,51.48681,-0.19475,District
@@ -296,11 +296,11 @@ Whitechapel ,51.51946,-0.05951,"District,Overground,Hammersmith and City"
 Willesden Green ,51.54919,-0.22106,Jubilee
 Willesden Junction ,51.53181,-0.24235,Overground
 Willesden Junction ,51.53032031,-0.229378995,Bakerloo
-Wimbledon ,51.422,-0.20544,District 
+Wimbledon ,51.422,-0.20544,District
 Wimbledon Park ,51.43391,-0.19864,District
-Wood Green ,51.59709,-0.10939,Piccadilly 
+Wood Green ,51.59709,-0.10939,Piccadilly
 Woodford ,51.60582,0.03328 ,Central
-Woodside Park ,51.6181717295887,-0.185578887883903,Northern 
+Woodside Park ,51.6181717295887,-0.185578887883903,Northern
 All Saints ,51.510301,-0.012832,DLR
 Beckton ,51.514411,0.061640 ,DLR
 Beckton Park ,51.508758,0.054778 ,DLR
@@ -331,7 +331,7 @@ Poplar ,51.507725,-0.016503,DLR
 Prince Regent ,51.509471,0.033473 ,DLR
 Pudding Mill Lane ,51.5339,-0.0142,DLR
 Royal Albert ,51.508456,0.046148 ,DLR
-Royal Victoria ,51.509156,0.018083 ,DLR
+Royal Victoria,51.509156,0.018083 ,DLR
 Shadwell ,51.51163,-0.05625,DLR
 Shadwell ,51.511853,-0.05548,DLR
 South Quay ,51.500413,-0.018636,DLR

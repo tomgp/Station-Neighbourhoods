@@ -19,6 +19,7 @@ function split_data(in_path, property_name, output){
 function got_data(err, data){
 	var json = JSON.parse(data);
 	var slices = {};
+	var style_sheet = "";
 //single line slices
 	for (var i =0; i<json["features"].length; i++){
 		var station = json["features"][i];
@@ -29,6 +30,7 @@ function got_data(err, data){
     				"type": "FeatureCollection",
     				"features": []
 				}
+				style_sheet += createStyle(line);
 			}
 			slices[line]["features"].push(station);
 		}
@@ -41,6 +43,7 @@ function got_data(err, data){
 		var line_group = station["properties"]["lines"].join('_');
 		if(!slices[line_group]){
 			createFill(line_group);
+			style_sheet += createStyle(line_group);
 			slices[line_group] = {
 				"type": "FeatureCollection",
 				"features": []
@@ -49,6 +52,27 @@ function got_data(err, data){
 		slices[line_group]["features"].push(station);
 	}
 	write_files(slices);
+	fs.writeFileSync( "style/tube_line_styles.mss", style_sheet, 'UTF-8');
+	console.log("written style/tube_line_styles.mss");
+}
+
+function createStyle(line_string){
+	console.log(line_string);
+	var style = "\n#" + toIDName(line_string) + '{';
+	if(line_string.indexOf("_") != -1){
+		style += "\n\tpolygon-pattern-file:url('img/" + line_string + ".png');";
+	}else if(lineData[line_string]){
+		style += "\n\tpolygon-fill:" + lineData[line_string]['fill'] + ";";
+		style += "\n\tline-color:" + lineData[line_string]['stroke'] + ";";
+	}else{
+	}
+	style += '\n}';
+	return style;
+}
+
+function toIDName(s){
+	return s.replace(/ /g,"").toLowerCase();
+
 }
 
 function createFill(line_string){
@@ -62,7 +86,7 @@ function createFill(line_string){
 		}
 		return colour;
 	});
-	fillGenerator.drawFill(colours, 20, 'test/'+line_string+'.gif');
+	fillGenerator.drawFill(colours, 20, 'style/img/'+line_string+'.png');
 }
 
 
