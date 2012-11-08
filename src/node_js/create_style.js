@@ -31,11 +31,16 @@ StyleMaker.makeStyle = function (geoJSON, outdir){
 				fillGenerator.drawFill(colours, 10, outdir +'/'+ slim_style_image);
 				style += "\n\tpolygon-pattern-file:url('" + style_image + "');";
 				style += "\n\tline-color:" + colours[0].stroke + ";";
+				style += "\n\t[zoom < 13]{";
+				style += "\n\t\tpolygon-pattern-file:url('" + slim_style_image + "');";
+
+				style += "\n\t}";
 			}else{
 				var line_name = properties.lines[0];
 				style += "\n\tpolygon-fill:" + lineData[line_name]['fill'] + ";";
 				style += "\n\tline-color:" + lineData[line_name]['stroke'] + ";";
 			}
+			style += "\n\tpolygon-opacity:0.5;";
 			style += "\n}";
 			styles[properties.lines_id] = style;
 		}
