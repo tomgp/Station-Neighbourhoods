@@ -4,6 +4,7 @@ var FillGenerator = {};
 module.exports = FillGenerator;
 
 FillGenerator.drawFill = function(colours, strip_width, file){
+	console.log("FillGenerator:  draw "  + file)
 	var drawShape = function(context, points, fill, stroke){
 		context.beginPath();
 		context.fillStyle = fill;

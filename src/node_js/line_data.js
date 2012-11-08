@@ -5,9 +5,9 @@ var LineData = {
 			"faded":"#B08E6E"
 		},
 	"Central":{		
-		"stroke":"#E32017",
-		"fill":"#E32017",
-		"faded":"#B05558"
+			"stroke":"#E32017",
+			"fill":"#E32017",
+			"faded":"#B05558"
 		},
 	"Circle":{
 			"stroke":"#FFD300",
@@ -52,7 +52,7 @@ var LineData = {
 	"Piccadilly":{
 			"stroke":"#003688",
 			"fill":"#003688",
-			"faded":"#DAA981"
+			"faded":"#7EA0E5"
 		},
 	"Tramlink":{
 			"stroke":"#84B817",

@@ -3,15 +3,23 @@ fs = require ("fs");
 fillGenerator = require('./fill_generator');
 lineData = require('./line_data');
 
+
 var out_path = '';
 
 var geoJSON_splits = {};
 
 split_data('data/stations.geojson', 'lines', 'data/split/');
 
-
+var faded = true;
 
 function split_data(in_path, property_name, output){
+	if(faded){
+		lineData = lineData.map(function(l){
+			console.log(l);
+			lineData[l].fill = lineData[l].faded;
+		})
+	}
+	console.log(lineData);
 	out_path = output;
 	fs.readFile(in_path, 'UTF-8', got_data);
 }
@@ -25,12 +33,13 @@ function got_data(err, data){
 		var station = json["features"][i];
 		for(var j=0; j<station["properties"]["lines"].length; j++){
 			var line = station["properties"]["lines"][j];
+			var station_name = station["properties"]["name"];
 			if(!slices[line]){
 				slices[line] = {
     				"type": "FeatureCollection",
     				"features": []
 				}
-				style_sheet += createStyle(line);
+				style_sheet += createStyle(line,station_name);
 			}
 			slices[line]["features"].push(station);
 		}
@@ -41,9 +50,10 @@ function got_data(err, data){
 		station["properties"]["lines"].sort();
 
 		var line_group = station["properties"]["lines"].join('_');
+		var station_name = station["properties"]["name"];
 		if(!slices[line_group]){
 			createFill(line_group);
-			style_sheet += createStyle(line_group);
+			style_sheet += createStyle(line_group,station_name);
 			slices[line_group] = {
 				"type": "FeatureCollection",
 				"features": []
@@ -56,23 +66,35 @@ function got_data(err, data){
 	console.log("written style/tube_line_styles.mss");
 }
 
-function createStyle(line_string){
+function createStyle(line_string, station){
 	console.log(line_string);
-	var style = "\n#" + toIDName(line_string) + '{';
-	if(line_string.indexOf("_") != -1){
-		style += "\n\tpolygon-pattern-file:url('img/" + line_string + ".png');";
-	}else if(lineData[line_string]){
-		style += "\n\tpolygon-fill:" + lineData[line_string]['fill'] + ";";
-		style += "\n\tline-color:" + lineData[line_string]['stroke'] + ";";
-	}else{
+	var style = '';
+	if(line_string!=''){
+		style = "\n#station_polygons[name = " + station + "]{";
+		if(line_string.indexOf("_") != -1){
+			style += "\n\tpolygon-pattern-file:url('img/" + line_string + ".png');";
+			style += "\n\tpolygon-pattern-clip:false;"
+			//style += "\n\tpolygon-pattern-alignment:global;";
+		}else if(lineData[line_string]){
+			style += "\n\tpolygon-fill:" + lineData[line_string]['fill'] + ";";
+			style += "\n\tline-color:" + lineData[line_string]['stroke'] + ";";
+		}else{
+		}
+		style += '\n}';
 	}
-	style += '\n}';
 	return style;
 }
 
 function toIDName(s){
-	return s.replace(/ /g,"").toLowerCase();
-
+	var id_name = s.replace(/ /g,"").toLowerCase();
+	var bits = id_name.split('_');
+	if(bits.length>1){ //multi line classes are the first 3 letters of each linejoined by an underscore
+		var short_bits = bits.map(function(line){
+			return line.substr(0,3); //todo_ substring of the first 3 chars
+		});
+		id_name = short_bits.join('_');
+	}
+	return id_name
 }
 
 function createFill(line_string){
