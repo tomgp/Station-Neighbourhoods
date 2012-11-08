@@ -26,7 +26,9 @@ StyleMaker.makeStyle = function (geoJSON, outdir){
 					return colour;
 				});
 				var style_image = 'img/' + properties.lines_id + '.png';
+				var slim_style_image = 'img/slim_' + properties.lines_id + '.png';
 				fillGenerator.drawFill(colours, 20, outdir +'/'+ style_image);
+				fillGenerator.drawFill(colours, 10, outdir +'/'+ slim_style_image);
 				style += "\n\tpolygon-pattern-file:url('" + style_image + "');";
 				style += "\n\tline-color:" + colours[0].stroke + ";";
 			}else{
